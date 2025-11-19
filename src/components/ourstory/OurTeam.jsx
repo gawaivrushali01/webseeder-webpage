@@ -8,7 +8,7 @@ export default function OurTeam() {
           A team of real people
         </h1>
         <p className="mt-4 max-w-3xl mx-auto text-sm md:text-base opacity-90 text-white text-center px-6">
-          At WebStacker, we are a diverse team of creative minds — designers,
+          At WebSeeder, we are a diverse team of creative minds — designers,
           developers, and strategists — united by a passion for building meaningful
           digital experiences.
         </p>
