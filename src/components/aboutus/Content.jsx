@@ -7,7 +7,7 @@ import {
   LuBrainCircuit,
 } from "react-icons/lu";
 import { FaRegHandshake } from "react-icons/fa";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 import website from "./assets/website.png";
 import hybrid from "./assets/hybrid.png";
 import software from "./assets/software.png";
@@ -24,13 +24,13 @@ import team2 from "./assets/team2.jpeg";
 
 import bg1 from "./assets/bg1.avif";
 import bg2 from "./assets/bg2.avif";
+import bg3 from "./assets/bg3.jpg";
 
 import icon1 from "./assets/icon1.jpg";
 import icon2 from "./assets/icon2.avif";
 import icon3 from "./assets/icon3.png";
 import icon4 from "./assets/icon4.avif";
 import icon5 from "./assets/icon5.jpg";
-
 
 const Content = () => {
   return (
@@ -39,14 +39,12 @@ const Content = () => {
         <div className="max-w-6xl mx-auto justify-center items-center flex flex-col">
           <div className="flex flex-col items-center mx-auto max-w-[85%] sm:max-w-[75%]">
             {/* HEADING */}
-            <h1
-              className="text-lg sm:text-3xl md:text-4xl lg:text-6xl font-semibold text-[#30473a] whitespace-nowrap text-center">
+            <h1 className="text-lg sm:text-3xl md:text-4xl lg:text-6xl font-semibold text-[#30473a] whitespace-nowrap text-center">
               Content, Concept and Creativity
             </h1>
 
             {/* SUB LINE */}
-            <h2
-              className="text-lg sm:text-3xl md:text-4xl lg:text-6xl font-semibold text-[#30473a] whitespace-nowrap mt-2 text-center">
+            <h2 className="text-lg sm:text-3xl md:text-4xl lg:text-6xl font-semibold text-[#30473a] whitespace-nowrap mt-2 text-center">
               are the <span className="text-orange-700/60">three C's</span> we
               work on
             </h2>
@@ -85,11 +83,7 @@ const Content = () => {
             {/* Box */}
             <div className="flex flex-col items-center text-center">
               <div className="w-48 h-28 bg-[#57bdc0] shadow-lg rounded-t-2xl flex items-center justify-center">
-                <img
-                  src={website}
-                  alt=""
-                  className="h-30 w-auto"
-                />
+                <img src={website} alt="" className="h-30 w-auto" />
               </div>
               <p className="mt-3 text-sm md:text-base font-medium">
                 Website Development
@@ -98,11 +92,7 @@ const Content = () => {
 
             <div className="flex flex-col items-center text-center">
               <div className="w-48 h-28 bg-[#459396] shadow-lg rounded-t-2xl flex items-center justify-center">
-                <img
-                  src={hybrid}
-                  alt=""
-                  className="h-25 w-auto pb-2"
-                />
+                <img src={hybrid} alt="" className="h-25 w-auto pb-2" />
               </div>
               <p className="mt-3 text-sm md:text-base font-medium">
                 Hybrid Application Development
@@ -111,11 +101,7 @@ const Content = () => {
 
             <div className="flex flex-col items-center text-center">
               <div className="w-48 h-28 bg-[#afa7a6] shadow-lg rounded-t-2xl flex items-center justify-center">
-                <img
-                  src={software}
-                  alt=""
-                  className="h-30 w-auto"
-                />
+                <img src={software} alt="" className="h-30 w-auto" />
               </div>
               <p className="mt-3 text-sm md:text-base font-medium">
                 Custom Software Development & Automation
@@ -124,11 +110,7 @@ const Content = () => {
 
             <div className="flex flex-col items-center text-center">
               <div className="w-48 h-28 bg-[#e05f3c] shadow-lg rounded-t-2xl flex items-center justify-center">
-                <img
-                  src={ai}
-                  alt=""
-                  className="h-30 w-auto"
-                />
+                <img src={ai} alt="" className="h-30 w-auto" />
               </div>
               <p className="mt-3 text-sm md:text-base font-medium">
                 AI & Machine Learning Solutions
@@ -137,11 +119,7 @@ const Content = () => {
 
             <div className="flex flex-col items-center text-center">
               <div className="w-48 h-28 bg-[#ec795a] shadow-lg rounded-t-2xl flex items-center justify-center">
-                <img
-                  src={announce}
-                  alt=""
-                  className="h-25 w-auto"
-                />
+                <img src={announce} alt="" className="h-25 w-auto" />
               </div>
               <p className="mt-3 text-sm md:text-base font-medium">
                 Branding & Digital Marketing
@@ -242,9 +220,7 @@ const Content = () => {
         </div>
 
         {/* Team Members */}
-        <div
-          className="max-w-6xl mx-auto -mt-20 grid grid-cols-2 md:grid-cols-3 gap-12 px-6 pb-16 text-center relative z-10"
-        >
+        <div className="max-w-6xl mx-auto -mt-20 grid grid-cols-2 md:grid-cols-3 gap-12 px-6 pb-16 text-center relative z-10">
           {/* Member 1 */}
           <div className="col-span-1">
             <img
@@ -296,9 +272,11 @@ const Content = () => {
 
         {/* Button */}
         <div className="text-center pb-16">
-          <Link to="/OurTeam"><button className="px-8 py-4 rounded-full border border-[#0A47A3] text-[#0A47A3] font-semibold text-lg transition-all hover:bg-[#0A47A3] hover:text-white shadow-md">
-            See Our All Team
-          </button></Link>
+          <Link to="/OurTeam">
+            <button className="px-8 py-4 rounded-full border border-[#0A47A3] text-[#0A47A3] font-semibold text-lg transition-all hover:bg-[#0A47A3] hover:text-white shadow-md">
+              See Our All Team
+            </button>
+          </Link>
         </div>
       </section>
 
@@ -411,10 +389,18 @@ const Content = () => {
         {/* Top Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 max-w-7xl mx-auto">
           {/* Left Big Card */}
-          <div className={`lg:col-span-3 rounded-2xl p-8 shadow-sm`} style={{ backgroundImage: `url(${bg1})` }}>
+          <div
+            className="lg:col-span-3 rounded-2xl p-8 shadow-sm flex flex-col justify-end items-start"
+            style={{
+              backgroundImage: `url(${bg1})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
             <h3 className="text-xl font-semibold mb-3">
               Convert Your Ideas <br /> into Digital Reality
             </h3>
+
             <p className="text-gray-600 mb-5">
               Fast, reliable, and scalable digital development.
               <br />
@@ -431,26 +417,11 @@ const Content = () => {
             </h3>
 
             <div className="grid grid-cols-3  justify-items-center">
-              <img
-                src={icon1}
-                className="w-25 h-25 rounded-full"
-              />
-              <img
-                src={icon2}
-                className="w-30 h-30 rounded-full"
-              />
-              <img
-                src={icon3}
-                className="w-40 h-40 rounded-full"
-              />
-              <img
-                src={icon4}
-                className="w-30 h-30 rounded-full"
-              />
-              <img
-                src={icon5}
-                className="w-25 h-25 rounded-full"
-              />
+              <img src={icon1} className="w-25 h-25 rounded-full" />
+              <img src={icon2} className="w-30 h-30 rounded-full" />
+              <img src={icon3} className="w-40 h-40 rounded-full" />
+              <img src={icon4} className="w-30 h-30 rounded-full" />
+              <img src={icon5} className="w-25 h-25 rounded-full" />
             </div>
           </div>
         </div>
@@ -458,19 +429,24 @@ const Content = () => {
         {/* Bottom Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 max-w-7xl mx-auto">
           {/* Mission Card */}
-          <div className={`rounded-2xl cover p-8 shadow-sm`} style={{ backgroundImage: `url(${bg2})` }}
->
+          <div
+            className={`rounded-2xl cover p-8 shadow-sm`}
+            style={{ backgroundImage: `url(${bg2})` }}
+          >
             <h3 className="text-xl font-semibold mb-3">Our Mission</h3>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-sm">
               To help businesses evolve through technology-driven creativity,
               delivering impactful solutions that inspire growth and innovation.
             </p>
           </div>
 
           {/* Vision Card */}
-          <div className="rounded-2xl bg-[url('https://plus.unsplash.com/premium_photo-1701892428822-8bd4341f5532?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8')] p-8 shadow-sm">
+          <div
+            className={`rounded-2xl p-8 shadow-sm`}
+            style={{ backgroundImage: `url(${bg3})` }}
+          >
             <h3 className="text-xl font-semibold mb-3">Our Vision</h3>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-sm">
               To be recognized globally as a trusted digital partner that
               transforms ideas into experiences and empowers businesses through
               design and technology.
@@ -478,9 +454,12 @@ const Content = () => {
           </div>
 
           {/* Approach Card */}
-          <div className={`rounded-2xl p-8 shadow-sm`} style={{ backgroundImage: `url(${bg2})` }}>
+          <div
+            className={`rounded-2xl p-8 shadow-sm`}
+            style={{ backgroundImage: `url(${bg2})` }}
+          >
             <h3 className="text-xl font-semibold mb-3">Our Approach</h3>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-sm">
               At WebSeeder, every project begins with understanding your goals
               and audience. We follow a “Design, Develop, Deliver” approach —
               ensuring that every solution is functional, meaningful, and built
