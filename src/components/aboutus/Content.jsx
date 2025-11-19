@@ -50,7 +50,7 @@ const item = {
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: { duration: 0.8, ease: "easeOut" },
   },
 };
 
@@ -156,7 +156,7 @@ const Content = () => {
             variants={container}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true }}
+            viewport={{ once: false, amount: 0.3}}
             className="grid grid-cols-2 gap-2 order-2 lg:order-1"
           >
             {/* COLUMN 1 */}
