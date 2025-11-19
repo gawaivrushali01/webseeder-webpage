@@ -411,7 +411,7 @@ const Content = () => {
         {/* Top Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 max-w-7xl mx-auto">
           {/* Left Big Card */}
-          <div className="lg:col-span-3 rounded-2xl bg-[url('./src/components/aboutus/assets/bg1.avif')] p-8 shadow-sm">
+          <div className={`lg:col-span-3 rounded-2xl p-8 shadow-sm`} style={{ backgroundImage: `url(${bg1})` }}>
             <h3 className="text-xl font-semibold mb-3">
               Convert Your Ideas <br /> into Digital Reality
             </h3>
@@ -458,7 +458,8 @@ const Content = () => {
         {/* Bottom Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 max-w-7xl mx-auto">
           {/* Mission Card */}
-          <div className="rounded-2xl bg-[url('./src/components/aboutus/assets/bg2.avif')] cover p-8 shadow-sm">
+          <div className={`rounded-2xl cover p-8 shadow-sm`} style={{ backgroundImage: `url(${bg2})` }}
+>
             <h3 className="text-xl font-semibold mb-3">Our Mission</h3>
             <p className="text-gray-600 leading-relaxed">
               To help businesses evolve through technology-driven creativity,
@@ -477,7 +478,7 @@ const Content = () => {
           </div>
 
           {/* Approach Card */}
-          <div className="rounded-2xl bg-[url('./src/components/aboutus/assets/bg2.avif')] p-8 shadow-sm">
+          <div className={`rounded-2xl p-8 shadow-sm`} style={{ backgroundImage: `url(${bg2})` }}>
             <h3 className="text-xl font-semibold mb-3">Our Approach</h3>
             <p className="text-gray-600 leading-relaxed">
               At WebSeeder, every project begins with understanding your goals
