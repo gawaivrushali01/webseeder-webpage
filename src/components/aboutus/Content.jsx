@@ -8,6 +8,29 @@ import {
 } from "react-icons/lu";
 import { FaRegHandshake } from "react-icons/fa";
 import {Link} from 'react-router-dom';
+import website from "./assets/website.png";
+import hybrid from "./assets/hybrid.png";
+import software from "./assets/software.png";
+import ai from "./assets/ai.png";
+import announce from "./assets/announce.png";
+
+import about1 from "./assets/about1.jpg";
+import about2 from "./assets/about2.webp";
+import about3 from "./assets/about3.webp";
+import about4 from "./assets/about4.jpg";
+
+import team1 from "./assets/team1.jpg";
+import team2 from "./assets/team2.jpeg";
+
+import bg1 from "./assets/bg1.avif";
+import bg2 from "./assets/bg2.avif";
+
+import icon1 from "./assets/icon1.jpg";
+import icon2 from "./assets/icon2.avif";
+import icon3 from "./assets/icon3.png";
+import icon4 from "./assets/icon4.avif";
+import icon5 from "./assets/icon5.jpg";
+
 
 const Content = () => {
   return (
@@ -63,7 +86,7 @@ const Content = () => {
             <div className="flex flex-col items-center text-center">
               <div className="w-48 h-28 bg-[#57bdc0] shadow-lg rounded-t-2xl flex items-center justify-center">
                 <img
-                  src=".\src\components\aboutus\assets\website.png"
+                  src={website}
                   alt=""
                   className="h-30 w-auto"
                 />
@@ -76,7 +99,7 @@ const Content = () => {
             <div className="flex flex-col items-center text-center">
               <div className="w-48 h-28 bg-[#459396] shadow-lg rounded-t-2xl flex items-center justify-center">
                 <img
-                  src=".\src\components\aboutus\assets\hybrid.png"
+                  src={hybrid}
                   alt=""
                   className="h-25 w-auto pb-2"
                 />
@@ -89,7 +112,7 @@ const Content = () => {
             <div className="flex flex-col items-center text-center">
               <div className="w-48 h-28 bg-[#afa7a6] shadow-lg rounded-t-2xl flex items-center justify-center">
                 <img
-                  src=".\src\components\aboutus\assets\software.png"
+                  src={software}
                   alt=""
                   className="h-30 w-auto"
                 />
@@ -102,7 +125,7 @@ const Content = () => {
             <div className="flex flex-col items-center text-center">
               <div className="w-48 h-28 bg-[#e05f3c] shadow-lg rounded-t-2xl flex items-center justify-center">
                 <img
-                  src=".\src\components\aboutus\assets\ai.png"
+                  src={ai}
                   alt=""
                   className="h-30 w-auto"
                 />
@@ -115,7 +138,7 @@ const Content = () => {
             <div className="flex flex-col items-center text-center">
               <div className="w-48 h-28 bg-[#ec795a] shadow-lg rounded-t-2xl flex items-center justify-center">
                 <img
-                  src=".\src\components\aboutus\assets\announce.png"
+                  src={announce}
                   alt=""
                   className="h-25 w-auto"
                 />
@@ -136,13 +159,13 @@ const Content = () => {
             {/* COLUMN 1 */}
             <div className="flex flex-col gap-6">
               <img
-                src="./src/components/aboutus/assets/about1.jpg"
+                src={about1}
                 alt=""
                 className="rounded-2xl w-[300px] h-[400px] object-cover pl-10"
               />
 
               <img
-                src="./src/components/aboutus/assets/about2.webp"
+                src={about2}
                 alt=""
                 className="rounded-xl w-[400px] h-[250px] object-cover"
               />
@@ -151,13 +174,13 @@ const Content = () => {
             {/* COLUMN 2 */}
             <div className="flex flex-col gap-6 mt-[30px]">
               <img
-                src="./src/components/aboutus/assets/about3.webp"
+                src={about3}
                 alt=""
                 className="rounded-xl w-[400px] h-[250px] object-cover"
               />
 
               <img
-                src="./src/components/aboutus/assets/about4.jpg"
+                src={about4}
                 alt=""
                 className="rounded-xl w-[250px] h-[200px] object-cover"
               />
@@ -225,7 +248,7 @@ const Content = () => {
           {/* Member 1 */}
           <div className="col-span-1">
             <img
-              src="./src/components/aboutus/assets/team1.jpg"
+              src={team1}
               alt=""
               className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto object-cover shadow-md"
             />
@@ -241,7 +264,7 @@ const Content = () => {
           {/* Member 2 */}
           <div className="col-span-1">
             <img
-              src="./src/components/aboutus/assets/team2.jpeg"
+              src={team2}
               alt=""
               className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto object-cover shadow-md"
             />
@@ -256,7 +279,7 @@ const Content = () => {
           <div className="col-span-2 md:col-span-1 flex justify-center">
             <div className="w-full md:w-auto">
               <img
-                src="./src/components/aboutus/assets/team1.jpg"
+                src={team1}
                 alt=""
                 className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto object-cover shadow-md"
               />
@@ -409,23 +432,23 @@ const Content = () => {
 
             <div className="grid grid-cols-3  justify-items-center">
               <img
-                src="./src/components/aboutus/assets/icon1.jpg"
+                src={icon1}
                 className="w-25 h-25 rounded-full"
               />
               <img
-                src="./src/components/aboutus/assets/icon2.avif"
+                src={icon2}
                 className="w-30 h-30 rounded-full"
               />
               <img
-                src="./src/components/aboutus/assets/icon3.png"
+                src={icon3}
                 className="w-40 h-40 rounded-full"
               />
               <img
-                src="./src/components/aboutus/assets/icon4.avif"
+                src={icon4}
                 className="w-30 h-30 rounded-full"
               />
               <img
-                src="./src/components/aboutus/assets/icon5.jpg"
+                src={icon5}
                 className="w-25 h-25 rounded-full"
               />
             </div>
